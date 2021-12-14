@@ -1,0 +1,187 @@
+// VARIABLES:
+@import '../../../styles/variables.scss';
+
+$hoverColorTransition: 0.4s;
+
+.root {
+  @media (max-width: 700px) {
+    transform: scale(80%);
+  }
+}
+.btnThreeBasics {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 800px;
+  height: 72px;
+  padding: 25px 10px;
+  font-size: 15px;
+  border: 2px solid #005cfa;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: bold;
+  transition: 0.2s;
+  right: 50%;
+  transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  &:hover {
+    border: 2px solid #004ccc;
+    background-color: #ededed;
+  }
+}
+.btnFirst {
+  z-index: 3;
+}
+.btnFourArrow {
+  transform: rotate(90deg) scale(2, 2.5);
+  font-size: 12px;
+  margin-left: 20px;
+  transition: $hoverColorTransition;
+}
+.btnFourArrowInverted {
+  transform: rotate(270deg) scale(2, 2.5) translateY(-1.3px);
+  font-size: 12px;
+  margin-left: 20px;
+  transition: $hoverColorTransition;
+}
+.btnFourBasics {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  text-decoration: none;
+  max-width: 800px;
+  height: 72px;
+  padding: 25px 10px;
+  font-size: 15px;
+  border: 2px solid #005cfa;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: bold;
+  right: 50%;
+  transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  &:hover {
+    border: 2px solid #004ccc;
+    background-color: #ededed;
+  }
+  @media (max-width: 700px) {
+    width: 85%;
+  }
+}
+.btnSecondShow {
+  z-index: 2;
+  transform: translate(50%, 133px);
+  transition: $hoverColorTransition;
+}
+.btnThirdShow {
+  z-index: 1;
+  transform: translate(50%, 266px);
+  transition: $hoverColorTransition + 0.2;
+}
+.iconBasics {
+  width: 70px;
+  height: 70px;
+  padding: 0;
+  margin: 0;
+  @media (max-width: 700px) {
+    width: 60px;
+    height: 60px;
+  }
+}
+.btnFourthBoxGrid {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  column-gap: 2%;
+  transition: 0.2s; // shrinking time
+  transform: translateY(-5px);
+  width: 90%;
+  max-width: 800px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  @media (max-width: 700px) {
+    width: 85%;
+  }
+}
+.btnFourthBasics {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 72px;
+  padding: 25px 10px;
+  font-size: 15px;
+  border: 2px solid #005cfa;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: bold;
+  &:hover {
+    border: 2px solid #004ccc;
+    background-color: #ededed;
+  }
+}
+.title {
+  font-size: 25px;
+  transition: $hoverColorTransition;
+}
+.btnFourHoverBlue {
+  &:hover {
+    transition: $hoverColorTransition;
+    background-color: #3b5998;
+    .title,
+    .arrow {
+      color: #fff;
+    }
+  }
+}
+.btnFourHoverRed {
+  &:hover {
+    transition: $hoverColorTransition;
+    background-color: #810000;
+  }
+}
+.btnFourLinkedin {
+  &:hover {
+    background-color: #24292f;
+    .iconLinkedin {
+      transition: $hoverColorTransition;
+      filter: invert(1) sepia(1) hue-rotate(180deg) saturate(0) brightness(1);
+    }
+  }
+}
+.btnFourGithub {
+  &:hover {
+    background-color: #24292f;
+    .iconGithub {
+      transition: $hoverColorTransition;
+      filter: invert(1) sepia(1) hue-rotate(180deg) saturate(0) brightness(1);
+    }
+  }
+}
+.btnFourthShow {
+  z-index: 2;
+  transform: translateY(390px);
+  transition: 0.8s;
+}
+.btnFourthLeft {
+  height: 70px;
+  padding: 22px 10px;
+}
+.btnFourthRight {
+  height: 70px;
+  padding: 22px 10px;
+}
+.linkName {
+  text-decoration: none;
+}

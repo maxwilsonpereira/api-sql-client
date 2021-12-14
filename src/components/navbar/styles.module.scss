@@ -1,0 +1,43 @@
+.root {
+  border-bottom: solid 1px; // horizontal line
+  padding: 10px 15px 10px 40px;
+  @media (max-width: 700px) {
+    padding: 8px 8px 8px 20px;
+  }
+}
+.navDiv {
+  display: flex;
+  align-items: center;
+}
+.link {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0 20px;
+  color: #000;
+  @media (max-width: 700px) {
+    font-size: 16px;
+  }
+}
+.activeLink {
+  // text-decoration: underline;
+  color: darkred;
+}
+.logoContainer {
+  width: 150px;
+  height: 46px;
+}
+.logo {
+  width: 150px;
+  transition: 0.2s ease;
+  &:hover {
+    width: 152px;
+  }
+  @media (max-width: 700px) {
+    width: 120px;
+    margin-top: 5px;
+    &:hover {
+      width: 122px;
+    }
+  }
+}

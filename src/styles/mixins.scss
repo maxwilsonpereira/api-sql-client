@@ -1,0 +1,70 @@
+@mixin btnBorder {
+  padding: 10px 5px;
+  border-radius: 3px;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  background: #fff;
+  transition: 0.2s ease;
+}
+@mixin btnGreenBorder {
+  border: 2px solid $greenBtn;
+  &:hover {
+    border: 2px solid $greenBtnHover;
+  }
+}
+@mixin btnBlueBorder {
+  border: 2px solid $blueBtn;
+  &:hover {
+    border: 2px solid $blueBtnHover;
+  }
+}
+@mixin btnRedBorder {
+  border: 2px solid $redBtn;
+  &:hover {
+    border: 2px solid $redBtnHover;
+  }
+}
+@mixin btnDisabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+@mixin btnFullBlue {
+  padding: 10px 5px;
+  border-radius: 3px;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+  color: #fff;
+  background: $blueBtn;
+  border: 2px solid $blueBtn;
+}
+@mixin btnFullBlueNotChosen {
+  opacity: 0.5;
+  padding: 10px 5px;
+  border-radius: 3px;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+  color: #fff;
+  background: $blueBtn;
+  border: 2px solid $blueBtn;
+  &:hover {
+    background: $blueBtnHover;
+    opacity: 1;
+  }
+}
+@mixin fadeIn() {
+  animation: 0.6s ease-in-out;
+  animation-name: fadeIn;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

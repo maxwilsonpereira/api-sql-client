@@ -1,0 +1,132 @@
+// VARIABLES:
+@import '../../styles/variables.scss';
+
+// MIXINS:
+@import '../../styles/mixins.scss';
+
+$transitionTime: 0.2s ease;
+
+.root {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  transition: $transitionTime;
+}
+.content {
+  position: relative;
+  background-image: url('../../assets//images/intro-img.jpg');
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.titleContainer {
+  height: 100px;
+  padding: 60px 40px 80px 40px;
+  background-color: rgba(2, 105, 173, 0.8);
+  color: #fff;
+  border-radius: 0 0 120px 0;
+  text-align: left;
+  transition: $transitionTime;
+  @media (max-width: 700px) {
+    border-radius: 0 0 50px 0;
+    padding: 40px 20px 10px 20px;
+  }
+}
+.title {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 50px;
+  margin-bottom: 10px;
+  transition: $transitionTime;
+  @media (max-width: 700px) {
+    font-size: 30px;
+  }
+}
+.subtitle {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 25px;
+  transition: $transitionTime;
+  @media (max-width: 700px) {
+    font-size: 18px;
+  }
+}
+.descriptionRoot {
+  padding: 50px;
+  @media (max-width: 700px) {
+    padding: 20px;
+  }
+}
+.descriptionContainer {
+  padding: 40px 40px 20px 40px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  max-width: 1000px;
+  margin: 0 auto 20px auto;
+  transition: $transitionTime;
+  @media (max-width: 700px) {
+    padding: 20px;
+  }
+}
+.description {
+  color: rgb(34, 34, 34);
+  font-size: 18px;
+  margin-bottom: 15px;
+  line-height: 26px;
+  text-align: left;
+  transition: $transitionTime;
+  @media (max-width: 700px) {
+    font-size: 16px;
+  }
+}
+.descriptionTitle {
+  margin-bottom: 5px;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  @media (max-width: 700px) {
+    font-size: 20px;
+  }
+}
+.finalSentence {
+  color: rgb(34, 34, 34);
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+  margin-top: 50px;
+  transition: $transitionTime;
+  @media (max-width: 700px) {
+    font-size: 12px;
+    margin-top: 30px;
+  }
+}
+.linkMainBtnDiv {
+  margin: 30px 0;
+}
+.linkBtnBlue {
+  margin: 20px auto;
+  padding: 10px 5px;
+  border-radius: 3px;
+  width: 90%;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+  text-align: center;
+  color: #fff;
+  background: $blueBtn;
+  border: 2px solid $blueBtn;
+  transition: $transitionTime;
+  &:hover {
+    background: $blueBtnHover;
+    border: 2px solid $blueBtnHover;
+  }
+}
+.link {
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  transition: $transitionTime;
+}

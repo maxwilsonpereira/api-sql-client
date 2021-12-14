@@ -1,0 +1,73 @@
+// VARIABLES:
+@import '../../styles/variables.scss';
+
+// MIXINS:
+@import '../../styles/mixins.scss';
+
+.inputAndBtnsContainer {
+  padding: 30px 30px 20px 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  @media (max-width: 700px) {
+    padding: 20px 8px;
+  }
+}
+.inputsContainerGrid {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  column-gap: 2%;
+}
+.inputsBtnsContainerGrid {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  column-gap: 2%;
+}
+.horizontalLine {
+  margin: 10px 0;
+}
+.title {
+  height: 28px;
+  font-size: 23px;
+  margin-bottom: 12px;
+  @media (max-width: 700px) {
+    height: 30px;
+    font-size: 16px;
+  }
+}
+.messageToUser {
+  font-size: 18px;
+  color: darkred;
+  transform: translateY(10px);
+  @media (max-width: 700px) {
+    font-size: 15px;
+  }
+}
+.inputStyle {
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.loadingInsideBtn {
+  transform: scale(50%) translateY(-8px);
+}
+.btnBorder {
+  @include btnBorder;
+}
+.btnGreenBorder {
+  @include btnGreenBorder;
+}
+.btnBlueBorder {
+  @include btnBlueBorder;
+}
+.btnRedBorder {
+  @include btnRedBorder;
+}
+.btnDisabled {
+  @include btnDisabled;
+}
+.btnFullBlue {
+  @include btnFullBlue;
+}
+.btnFullBlueNotChosen {
+  @include btnFullBlueNotChosen;
+}
