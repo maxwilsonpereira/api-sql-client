@@ -119,7 +119,7 @@ export default function Home() {
     const params = {
       firstname: noUsers ? 'Max Wilson' : firstname,
       surname: noUsers ? 'Pereira' : surname,
-      birthday: noUsers ? '🤐🤐0310' : birthday,
+      birthday: noUsers ? '19100310' : birthday,
       email: noUsers ? 'maxwilsonpereira@gmail.com' : email,
       sex: noUsers ? 'M' : sex,
       password: noUsers ? 'password' : password,
